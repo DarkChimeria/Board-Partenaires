@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-03-07 21:35:21
+/* Smarty version 3.1.29, created on 2017-03-11 09:58:24
   from "C:\wamp64\www\tm\tpl\header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58bf2799eb5446_77187060',
+  'unifunc' => 'content_58c3ca40e37423_65685531',
   'file_dependency' => 
   array (
     'becbba09802dfa5b89d5b2c3dee1ba739a241f1f' => 
     array (
       0 => 'C:\\wamp64\\www\\tm\\tpl\\header.tpl',
-      1 => 1488922520,
+      1 => 1489226302,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58bf2799eb5446_77187060 ($_smarty_tpl) {
+function content_58c3ca40e37423_65685531 ($_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -51,6 +51,12 @@ function content_58bf2799eb5446_77187060 ($_smarty_tpl) {
 
 	<!-- DataTables -->
 	<link rel="stylesheet" href="includes/design/js/datatables/dataTables.bootstrap.css">
+
+	<!-- BootStrap Alert -->
+	<?php echo '<script'; ?>
+ src="includes/libs/swal2/sweetalert2.min.js"><?php echo '</script'; ?>
+>
+	<link rel="stylesheet" href="includes/libs/swal2/sweetalert2.min.css" type="text/css" />
 
 
 </head>

@@ -58,6 +58,9 @@
 <script src="includes/design/js/datatables/jquery.dataTables.js"></script>
 <script src="includes/design/js/datatables/dataTables.bootstrap.min.js"></script>
 
+<!-- Bootstrap Alert -->
+<script src="includes/design/js/alertdelete.js"></script>
+
 <script type="text/javascript">
 	$(document).ready(function(){
 

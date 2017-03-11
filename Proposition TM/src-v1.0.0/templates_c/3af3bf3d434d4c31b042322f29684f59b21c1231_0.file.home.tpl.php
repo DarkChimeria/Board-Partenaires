@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-03-07 22:19:18
+/* Smarty version 3.1.29, created on 2017-03-11 10:50:50
   from "C:\wamp64\www\tm\tpl\home\home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58bf31e6815701_09636847',
+  'unifunc' => 'content_58c3d68a16cef7_39341066',
   'file_dependency' => 
   array (
     '3af3bf3d434d4c31b042322f29684f59b21c1231' => 
     array (
       0 => 'C:\\wamp64\\www\\tm\\tpl\\home\\home.tpl',
-      1 => 1488925157,
+      1 => 1489229445,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58bf31e6815701_09636847 ($_smarty_tpl) {
+function content_58c3d68a16cef7_39341066 ($_smarty_tpl) {
 if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\wamp64\\www\\tm\\includes\\libs\\Smarty\\plugins\\modifier.date_format.php';
 ?>
 			<div class="content">
@@ -429,6 +429,7 @@ if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\wamp64\\www\\
 															<th>Nom</th>
 															<th>Prénom</th>
 															<th>Date Inscription</th>
+															<th>Actions</th>
 														</tr>
 													</thead>
 													<tfoot class="text-warning">
@@ -437,11 +438,12 @@ if (!is_callable('smarty_modifier_date_format')) require_once 'C:\\wamp64\\www\\
 															<th>Nom</th>
 															<th>Prénom</th>
 															<th>Date Inscription</th>
+															<th>Actions</th>
 														</tr>
 													</tfoot>
 													<tbody>
 
-													<?php
+														<?php
 $_from = $_smarty_tpl->tpl_vars['testtable']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
@@ -453,15 +455,30 @@ foreach ($_from as $_smarty_tpl->tpl_vars['test']->value) {
 $_smarty_tpl->tpl_vars['test']->_loop = true;
 $__foreach_test_0_saved_local_item = $_smarty_tpl->tpl_vars['test'];
 ?>
-														<tr>
+														<tr id="delete_<?php echo $_smarty_tpl->tpl_vars['test']->value['pid'];?>
+">
 															<td><?php echo $_smarty_tpl->tpl_vars['test']->value['pid'];?>
 </td>
-															<td><?php echo $_smarty_tpl->tpl_vars['test']->value['pname'];?>
-</td>
+															<td>
+															<span id="name_<?php echo $_smarty_tpl->tpl_vars['test']->value['pid'];?>
+"><?php echo $_smarty_tpl->tpl_vars['test']->value['pname'];?>
+</span>
+															<input class="tabledit-input form-control input-sm" id="inputname_<?php echo $_smarty_tpl->tpl_vars['test']->value['pid'];?>
+" name="nickname" value="<?php echo $_smarty_tpl->tpl_vars['test']->value['pname'];?>
+" style="display: none;" disabled="" type="text">
+															</td>
 															<td><?php echo $_smarty_tpl->tpl_vars['test']->value['pfirstname'];?>
 </td>
 															<td><?php echo $_smarty_tpl->tpl_vars['test']->value['pregisterdate'];?>
 </td>
+															<td>
+															<a class="btn btn-sm btn-warning"  data-id="<?php echo $_smarty_tpl->tpl_vars['test']->value['pid'];?>
+" onClick="Edit(<?php echo $_smarty_tpl->tpl_vars['test']->value['pid'];?>
+)"><i class="glyphicon glyphicon-pencil"></i></a>
+															<a class="btn btn-sm btn-danger"  data-id="<?php echo $_smarty_tpl->tpl_vars['test']->value['pid'];?>
+" onClick="Delete(<?php echo $_smarty_tpl->tpl_vars['test']->value['pid'];?>
+)"><i class="glyphicon glyphicon-trash"></i></a>
+															</td>
 														</tr>
 														<?php
 $_smarty_tpl->tpl_vars['test'] = $__foreach_test_0_saved_local_item;

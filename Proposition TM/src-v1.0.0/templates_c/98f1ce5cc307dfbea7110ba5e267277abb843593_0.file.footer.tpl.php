@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-03-07 21:39:39
+/* Smarty version 3.1.29, created on 2017-03-11 09:56:55
   from "C:\wamp64\www\tm\tpl\footer.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58bf289b25a564_67863204',
+  'unifunc' => 'content_58c3c9e7eea692_32296055',
   'file_dependency' => 
   array (
     '98f1ce5cc307dfbea7110ba5e267277abb843593' => 
     array (
       0 => 'C:\\wamp64\\www\\tm\\tpl\\footer.tpl',
-      1 => 1488922778,
+      1 => 1489226214,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58bf289b25a564_67863204 ($_smarty_tpl) {
+function content_58c3c9e7eea692_32296055 ($_smarty_tpl) {
 ?>
 <footer class="footer">
 	<div class="container-fluid">
@@ -101,6 +101,11 @@ function content_58bf289b25a564_67863204 ($_smarty_tpl) {
 >
 <?php echo '<script'; ?>
  src="includes/design/js/datatables/dataTables.bootstrap.min.js"><?php echo '</script'; ?>
+>
+
+<!-- Bootstrap Alert -->
+<?php echo '<script'; ?>
+ src="includes/design/js/alertdelete.js"><?php echo '</script'; ?>
 >
 
 <?php echo '<script'; ?>

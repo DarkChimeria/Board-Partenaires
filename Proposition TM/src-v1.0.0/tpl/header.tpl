@@ -28,6 +28,10 @@
 	<!-- DataTables -->
 	<link rel="stylesheet" href="includes/design/js/datatables/dataTables.bootstrap.css">
 
+	<!-- BootStrap Alert -->
+	<script src="includes/libs/swal2/sweetalert2.min.js"></script>
+	<link rel="stylesheet" href="includes/libs/swal2/sweetalert2.min.css" type="text/css" />
+
 
 </head>
 

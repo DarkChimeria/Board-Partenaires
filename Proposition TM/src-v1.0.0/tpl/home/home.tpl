@@ -402,6 +402,7 @@
 															<th>Nom</th>
 															<th>Prénom</th>
 															<th>Date Inscription</th>
+															<th>Actions</th>
 														</tr>
 													</thead>
 													<tfoot class="text-warning">
@@ -410,16 +411,23 @@
 															<th>Nom</th>
 															<th>Prénom</th>
 															<th>Date Inscription</th>
+															<th>Actions</th>
 														</tr>
 													</tfoot>
 													<tbody>
 
-													{foreach from=$testtable item=test}
-														<tr>
+														{foreach from=$testtable item=test}
+														<tr id="delete_{$test.pid}">
 															<td>{$test.pid}</td>
-															<td>{$test.pname}</td>
+															<td>
+															<span id="name_{$test.pid}">{$test.pname}</span>
+															</td>
 															<td>{$test.pfirstname}</td>
 															<td>{$test.pregisterdate}</td>
+															<td>
+															<a class="btn btn-sm btn-warning"  data-id="{$test.pid}"><i class="glyphicon glyphicon-pencil"></i></a>
+															<a class="btn btn-sm btn-danger"  data-id="{$test.pid}" onClick="Delete({$test.pid})"><i class="glyphicon glyphicon-trash"></i></a>
+															</td>
 														</tr>
 														{/foreach}
 													</tbody>
